@@ -69,7 +69,7 @@ The `runtime: shiny_prerendered` element included in the YAML hints at the under
 
 #### Tutorial Format
 
-While you can use tutorial elements many different R Markdown formats (see the article on [Tutorial Formats](formats.html) for details), the **learnr** package also includes a custom `learnr::tutorial` format which provides some default layout and behavior (including progress tracking) which you'll likely want to use in many of your tutorials. 
+While you can use tutorial elements within many different R Markdown formats (see the article on [Tutorial Formats](formats.html) for details), the **learnr** package also includes a custom `learnr::tutorial` format which provides some default layout and behavior (including progress tracking) which you'll likely want to use in many of your tutorials. 
 
 You can create a new `learnr::tutorial` document from a template via the **New R Markdown** dialog in RStudio:
 
@@ -116,7 +116,7 @@ There are two main types of tutorial documents:
 
 The first type of tutorial is of course much easier to author while still being very useful. These documents will typically add `exercise = TRUE` to selected code chunks and also set `exercise.eval = TRUE` so the chunk output is visible by default. The reader can simply look at the R code and move on or can play with it to reinforce their understanding.
 
-The second type of tutorial provides much richer feedback and assessment but of course considerably more effort to author. If you are primarily interested in this sort of tutorial there are many features to support it including exercise [hints and solutions](exercises.html#hints-and-solutions), automated exercise [checkers](exercises.html#exercise-checking), and multiple choice [quizzes](questions.html) with custom feedback.
+The second type of tutorial provides much richer feedback and assessment but is of course considerably more effort to author. If you are primarily interested in this sort of tutorial there are many features to support it including exercise [hints and solutions](exercises.html#hints-and-solutions), automated exercise [checkers](exercises.html#exercise-checking), and multiple choice [quizzes](questions.html) with custom feedback.
 
 The most straightforward path is to start with the first type of tutorial (executable chunks with pre-evaluated output) and then move into more sophisticated assessment and feedback over time.
 
@@ -174,7 +174,7 @@ You can learn more by reading the [Prerendered Shiny Documents](http://rmarkdown
 
 ## External Resources
 
-You may wish to include external resources (images, videos, CSS, etc.) within your tutorial documents. Since the tutorial will be deployed as a Shiny applications, you need to ensure that these resources are placed within one of several directories which are reachable by the Shiny web server:
+You may wish to include external resources (images, videos, CSS, etc.) within your tutorial documents. Since the tutorial will be deployed as a Shiny application, you need to ensure that these resources are placed within one of several directories which are reachable by the Shiny web server:
 
 <table>
 <thead>
